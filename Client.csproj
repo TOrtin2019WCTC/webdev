@@ -13,7 +13,7 @@
     <Folder Include="wwwroot\Views\" />
     <Folder Include="wwwroot\Views\Home\" />
     <Folder Include="wwwroot\Views\Shared\" />
-    <Folder Include="wwwroot\Views\Shared\Models\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,5 +27,21 @@
     <Content Remove="wwwroot\css\balloon.css" />
     <Content Remove="wwwroot\css\bootstrap.min %283%29.css" />
     <Content Remove="wwwroot\css\bootstrap.min %284%29.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\Category.cs" />
+    <Compile Remove="Models\NorthwindContext.cs" />
+    <Compile Remove="Models\Product.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Models\Category.cs">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Models\NorthwindContext.cs">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Models\Product.cs">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 </Project>
