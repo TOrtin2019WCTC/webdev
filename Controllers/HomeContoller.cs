@@ -8,6 +8,6 @@ namespace Client.Controllers
         private INorthwindRepository repository;
         public HomeController(INorthwindRepository repo) => repository = repo;
 
-        public IActionResult index() => View(repository.Products);
+        public IActionResult Index() => View(repository.Products);
     }
 }

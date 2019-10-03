@@ -25,7 +25,7 @@ namespace Client
         public void ConfigureServices(IServiceCollection services)
         {
             // this is where we use the config info for our connection string
-            services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(Configuration["Data:Blog:ConnectionString"]));
+            services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(Configuration["Data:Northwind:ConnectionString"]));
             services.AddTransient<INorthwindRepository, EFNorthwindRepository>();
             services.AddMvc();
         }
