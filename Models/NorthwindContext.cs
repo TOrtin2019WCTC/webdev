@@ -1,5 +1,5 @@
 ﻿using System;
-using Client.wwwroot.Views.Shared.Models;
+using Client.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Client.Models

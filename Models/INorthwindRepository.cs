@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Linq;
-using Client.wwwroot.Views.Shared.Models;
+using Client.Models;
 
 namespace Client.Models
 {

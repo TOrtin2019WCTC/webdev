@@ -1,5 +1,8 @@
 ﻿using System;
-namespace Client.wwwroot.Views.Shared.Models
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Client.Models
 {
     public class Category
     {
@@ -7,7 +10,7 @@ namespace Client.wwwroot.Views.Shared.Models
         public string CategoryName { get; set; }
         public string Description { get; set; }
 
-        public virtual List<Product> Product { get; set; }
+        public virtual IQueryable<Product> Product { get; set; }
     }
 
 }
