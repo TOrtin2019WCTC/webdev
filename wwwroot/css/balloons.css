@@ -1,0 +1,39 @@
+﻿h1 {
+    display: inline-block;
+    font-family: 'chewy';
+    color: darkgray;
+    font-size: 3em;
+}
+
+body {
+    font-family: 'helvetica';
+    font-size: 1.5em;
+}
+
+
+.balloon {
+    visibility: hidden;
+}
+
+.toast {
+    position: absolute;
+    top: 65px;
+    right: 10px;
+    border: 3px solid red;
+}
+
+.toast-body {
+    background-color: blue;
+    color: white;
+}
+
+.toast-header {
+    background-color: white;
+    color: blue;
+    font-size: 1.5em;
+}
+
+.card-title {
+    font-style: italic;
+    font-weight: bold;
+}
