@@ -1,1 +1,17 @@
-﻿hello shithead!
+﻿@using Client.wwwroot.Views.Shared.Models
+@Model IEnumerable<Product>
+
+
+    <div>
+        <h3>Products</h3>
+
+        <ul>
+
+            @foreach (Product product in Model)
+            {
+
+                <li>@product.ProductName</li>
+            }
+
+        </ul>
+    </div>

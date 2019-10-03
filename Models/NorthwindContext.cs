@@ -1,10 +1,17 @@
 ﻿using System;
-namespace Client.wwwroot.Views.Shared.Models
+using Client.wwwroot.Views.Shared.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace Client.Models
 {
-    public class NorthwindContext
+    public class NorthwindContext : DbContext
     {
-        public NorthwindContext()
-        {
-        }
+        public NorthwindContext(DbContextOptions<NorthwindContext> options) : base(options) { }
+
+
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
     }
+
 }
