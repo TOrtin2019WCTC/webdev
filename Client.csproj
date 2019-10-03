@@ -10,10 +10,8 @@
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\media\" />
     <Folder Include="Controllers\" />
-    <Folder Include="wwwroot\Views\" />
+    <Folder Include="Models\" />
     <Folder Include="wwwroot\Views\Home\" />
-    <Folder Include="wwwroot\Views\Shared\" />
-    <Folder Include="Models %28copy%29\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,16 +30,12 @@
     <Compile Remove="Models %28copy%29\Category.cs" />
     <Compile Remove="Models %28copy%29\NorthwindContext.cs" />
     <Compile Remove="Models %28copy%29\Product.cs" />
+    <Compile Remove="Models %28copy%29\EFNorthwindRepository.cs" />
+    <Compile Remove="Models %28copy%29\INorthwindRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models %28copy%29\Category.cs">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="Models %28copy%29\NorthwindContext.cs">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="Models %28copy%29\Product.cs">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    <Content Update="wwwroot\Views\Home\Index.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 </Project>
