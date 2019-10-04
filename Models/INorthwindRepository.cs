@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using Client.Models;
 
 namespace Client.Models
 {

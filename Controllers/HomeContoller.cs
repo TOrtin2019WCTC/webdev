@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Client.Models;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Client.Controllers
 {
@@ -8,6 +11,10 @@ namespace Client.Controllers
         private INorthwindRepository repository;
         public HomeController(INorthwindRepository repo) => repository = repo;
 
-        public IActionResult Index() => View(repository.Products);
+
+        public IActionResult Index()
+        {
+            return View(repository.Categories.OrderBy(c => c.CategoryName));
+        }
     }
 }

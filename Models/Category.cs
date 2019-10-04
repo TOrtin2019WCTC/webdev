@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+
 
 namespace Client.Models
 {
@@ -10,7 +10,7 @@ namespace Client.Models
         public string CategoryName { get; set; }
         public string Description { get; set; }
 
-        public virtual IQueryable<Product> Product { get; set; }
+        public virtual IEnumerable<Product> Product { get; set; }
     }
 
 }

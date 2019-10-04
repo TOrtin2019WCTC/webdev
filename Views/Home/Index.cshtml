@@ -1,0 +1,12 @@
+﻿@using Client.Models
+@model IEnumerable<Category>
+
+
+
+<h2 class="ml-6 pt-0" style="text-decoration: underline;"> Categories</h2>
+<ul>
+    @foreach (Category c in Model)
+    {
+        <li>@c.CategoryName - @c.Description</li>
+    }
+</ul>
