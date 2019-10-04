@@ -11,10 +11,7 @@ namespace Client.Controllers
 {
     public class ProductController : Controller
     {
-        private Category c;
 
-        // GET: /<controller>/
-        public IActionResult Category() => View(c.CategoryName);
 
     }
 }
