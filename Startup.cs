@@ -3,6 +3,8 @@
 using Client.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Internal;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,9 +38,22 @@ namespace Client
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+
             }
 
-            app.UseMvcWithDefaultRoute();
+            app.UseStaticFiles();
+            //app.UseMvcWithDefaultRoute();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });
+
+
+
+
+
+
         }
     }
 }

@@ -1,1 +1,15 @@
-﻿
+﻿@using Client.Models
+@model IEnumerable<Category>
+@{
+    ViewBag.Title = "Categories";
+}
+
+
+
+<h4>Categories</h4>
+<ul>
+    @foreach (Category c in Model)
+    {
+        <li>@c.CategoryName - @c.Description</li>
+    }
+</ul>

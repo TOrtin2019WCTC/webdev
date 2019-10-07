@@ -12,6 +12,14 @@ namespace Client.Controllers
     public class ProductController : Controller
     {
 
+        private INorthwindRepository repository;
+        public ProductController(INorthwindRepository repo) => repository = repo;
+
+
+        public IActionResult Category()
+        {
+            return View(repository.Categories.OrderBy(c => c.CategoryName));
+        }
 
     }
 }
