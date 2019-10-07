@@ -4,12 +4,18 @@
     ViewBag.Title = "Categories";
 }
 
+<div class="jumbotron mb-0">
+    <div class="container justify-content-start mt-0 pt-0">
 
 
-<h4>Categories</h4>
-<ul>
-    @foreach (Category c in Model)
-    {
-        <li>@c.CategoryName - @c.Description</li>
-    }
-</ul>
+        <h1 class="row justify-content-space-around my-0 py-4 pl-5 primary-dark">Categories</h1>
+        <div class="row justify-content-space-around mx-4 px-4" style="font-size: 1.25em;">
+            <ul>
+                @foreach (Category c in Model)
+                {
+                    <li>@c.CategoryName - @c.Description</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
