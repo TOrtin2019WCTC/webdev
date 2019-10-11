@@ -21,5 +21,6 @@ namespace Client.Controllers
             return View(repository.Categories.OrderBy(c => c.CategoryName));
         }
 
+
     }
 }

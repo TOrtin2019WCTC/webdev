@@ -42,13 +42,12 @@ namespace Client
             }
 
             app.UseStaticFiles();
+
             app.UseMvcWithDefaultRoute();
-
-            app.UseMvc(routes =>
-            {
-
-                routes.MapRoute("default", "{controller=Product}/{action=Category}/{id?}");
-            });
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute("default", "{controller=Product}/{action=Category}/{id?}");
+            //});
 
 
 
