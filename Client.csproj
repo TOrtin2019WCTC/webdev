@@ -9,6 +9,10 @@
     <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\media\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,5 +26,31 @@
     <Content Remove="wwwroot\css\balloon.css" />
     <Content Remove="wwwroot\css\bootstrap.min %283%29.css" />
     <Content Remove="wwwroot\css\bootstrap.min %284%29.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models %28copy%29\Category.cs" />
+    <Compile Remove="Models %28copy%29\NorthwindContext.cs" />
+    <Compile Remove="Models %28copy%29\Product.cs" />
+    <Compile Remove="Models %28copy%29\EFNorthwindRepository.cs" />
+    <Compile Remove="Models %28copy%29\INorthwindRepository.cs" />
+    <Compile Remove="Models %28copy%29\NorthwindContext.cs" />
+    <Compile Remove="Models %28copy%29\EFNorthwindRepository.cs" />
+    <Compile Remove="Models %28copy%29\INorthwindRepository.cs" />
+    <Compile Remove="Models %28copy%29\Category.cs" />
+    <Compile Remove="Models %28copy%29\Product.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\.DS_Store" />
+    <None Remove="Content\css\bootstrap-theme.css" />
+    <None Remove="Content\css\bootstrap-theme-superhero.css" />
+    <None Remove="Content\css\client.css" />
+    <None Remove="Content\css\bootstrap-custom.min.css" />
+    <None Remove="Views\Shared\client.css" />
+    <None Remove="client.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\.DS_Store">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 </Project>
